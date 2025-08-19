@@ -19,14 +19,6 @@ npm install captialize
  * @param {string} text - The input text to capitalize
  * @returns {string} The text with first letter capitalized
  */
- 
-function capitalizeFirstLetter(text) {
-    if (!text || typeof text !== 'string') {
-        return '';
-    }
-    return text.charAt(0).toUpperCase() + text.slice(1);
-}
-
 
 const { capitalizeFirstLetter } = require('captialize');
 
