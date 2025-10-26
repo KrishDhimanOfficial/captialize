@@ -20,9 +20,10 @@ npm install captialize
  * @returns {string} The text with first letter capitalized
  */
 
-const { capitalizeFirstLetter } = require('captialize');
+const { capitalize } = require('captialize');
 
-console.log(capitalizeFirstLetter('hello')); // Output: "Hello"
-console.log(capitalizeFirstLetter('world')); // Output: "World"
-console.log(capitalizeFirstLetter(''));      // Output: ""
-console.log(capitalizeFirstLetter(null));    // Output: ""
+console.log(capitalize('hello world',{every:true})); // Output: "Hello World"
+console.log(capitalize('hello')); // Output: "Hello"
+console.log(capitalize('world')); // Output: "World"
+console.log(capitalize(''));      // Output: ""
+console.log(capitalize(null));    // Output: ""

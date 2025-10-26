@@ -1,11 +1,23 @@
 {
   "name": "captialize",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "",
+  "author": "krish dhiman",
   "license": "ISC",
-  "description": ""
+  "description": "Captialize First Letter",
+  "keywords": [
+    "captialize",
+    "first",
+    "letter",
+    "captialize",
+    "first",
+    "letter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KrishDhimanOfficial/captialize"
+  }
 }
