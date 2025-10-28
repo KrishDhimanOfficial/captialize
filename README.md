@@ -2,8 +2,6 @@
 
 A simple utility function that capitalizes the first letter of a given string. This is useful for formatting titles, names, or any text content where the first letter should be uppercase.
 
-https://github.com/KrishDhimanOfficial/captialize
-
 ---
 
 ## 📦 Installation
