@@ -9,8 +9,6 @@ A simple utility function that capitalizes the first letter of a given string. T
 If using as part of your npm package:
 
 ```bash
-npm install captialize
-
 
 /**
  * Capitalizes the first letter of a text string
@@ -20,7 +18,7 @@ npm install captialize
 
 const { capitalize } = require('captialize');
 
-console.log(capitalize('hello world',{every:true})); // Output: "Hello World"
+console.log(capitalize('hello world',{every:true})) // Output: "Hello World"
 console.log(capitalize('hello')); // Output: "Hello"
 console.log(capitalize('world')); // Output: "World"
 console.log(capitalize(''));      // Output: ""
