@@ -1,6 +1,6 @@
-# Capitalize First Letter
+# Capitalize First Letter & Case Utilities
 
-A simple utility function that capitalizes the first letter of a given string. This is useful for formatting titles, names, or any text content where the first letter should be uppercase.
+A lightweight utility library for string capitalization and advanced case conversions. Useful for formatting titles, names, variable names, or any text content.
 
 ---
 
@@ -9,17 +9,52 @@ A simple utility function that capitalizes the first letter of a given string. T
 If using as part of your npm package:
 
 ```bash
+npm install captialize
+```
 
-/**
- * Capitalizes the first letter of a text string
- * @param {string} text - The input text to capitalize
- * @returns {string} The text with first letter capitalized
- */
+## 🚀 Usage
 
+### Capitalize
+
+Capitalizes the first letter of a string. By default, it capitalizes the first letter of every word.
+
+```javascript
 const { capitalize } = require('captialize');
 
-console.log(capitalize('hello world',{every:true})) // Output: "Hello World"
-console.log(capitalize('hello')); // Output: "Hello"
-console.log(capitalize('world')); // Output: "World"
+console.log(capitalize('hello world')); // Output: "Hello World"
+console.log(capitalize('hello world', { every: false })); // Output: "Hello world"
 console.log(capitalize(''));      // Output: ""
 console.log(capitalize(null));    // Output: ""
+```
+
+### Case Conversions
+
+The library also includes standard case conversion utilities:
+
+```javascript
+const { 
+  camelCase, 
+  pascalCase, 
+  snakeCase, 
+  kebabCase, 
+  titleCase 
+} = require('captialize');
+
+// camelCase
+console.log(camelCase('Hello World')); // "helloWorld"
+console.log(camelCase('--foo-bar--')); // "fooBar"
+
+// PascalCase
+console.log(pascalCase('hello world')); // "HelloWorld"
+
+// snake_case
+console.log(snakeCase('camelCase')); // "camel_case"
+console.log(snakeCase('Hello World')); // "hello_world"
+
+// kebab-case
+console.log(kebabCase('hello_world')); // "hello-world"
+console.log(kebabCase('camelCase')); // "camel-case"
+
+// Title Case
+console.log(titleCase('hello_world')); // "Hello World"
+```
