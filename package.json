@@ -9,12 +9,19 @@
   "license": "ISC",
   "description": "Captialize First Letter",
   "keywords": [
+    "capitalize",
     "captialize",
     "first",
     "letter",
-    "captialize",
-    "first",
-    "letter"
+    "case",
+    "string",
+    "camelCase",
+    "pascalCase",
+    "snakeCase",
+    "kebabCase",
+    "titleCase",
+    "format",
+    "utility"
   ],
   "repository": {
     "type": "git",
